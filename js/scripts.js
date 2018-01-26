@@ -8,16 +8,22 @@ function Pizza(size, topping1, topping2) {
 Pizza.prototype.price = function() {
   if (this.size === "small" && this.topping1 !== "none" && this.topping2 === "none") {
     return (7 + 2 + 0);
-  } else if (this.size === "small" && this.topping1 === "none" && this.topping2 === "none") {
+  } else if (this.size === "small" && this.topping1 !== "none" && this.topping2 !== "none") {
     return (7 + 2 + 2);
+  } else if (this.size === "small" && this.topping1 === "none" && this.topping2 !== "none") {
+    return (7 + 2 + 0);
   } else if (this.size === "medium" && this.topping1 !== "none" && this.topping2 === "none") {
     return (9 + 2 + 0);
-  } else if (this.size === "medium" && this.topping1 === "none" && this.topping2 === "none") {
+  } else if (this.size === "medium" && this.topping1 !== "none" && this.topping2 !== "none") {
     return (9 + 2 + 2);
+  } else if (this.size === "medium" && this.topping1 === "none" && this.topping2 !== "none") {
+    return (9 + 2 + 0);
   } else if (this.size === "large" && this.topping1 !== "none" && this.topping2 === "none") {
     return (11 + 2 + 0)
-  } else if (this.size === "large" && this.topping1 === "none" && this.topping2 === "none") {
+  } else if (this.size === "large" && this.topping1 !== "none" && this.topping2 !== "none") {
     return (11 + 2 + 2)
+  } else if (this.size === "large" && this.topping1 === "none" && this.topping2 !== "none") {
+    return (11 + 2 + 0)
   } else {
     return ("Please try again.");
   }

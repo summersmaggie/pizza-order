@@ -5,12 +5,14 @@ function Pizza(size, topping) {
 };
 
 Pizza.prototype.price = function() {
-  if (this.size === "small") {
-    return ("9");
-  } else if (this.size === "medium") {
-    return ("11")
-  } else if (this.size === "large") {
+  if (this.size === "small" && this.topping === "salami") {
+    return (7 + 4);
+  } else if (this.size === "medium" && this.topping === "jalepeño") {
     return ("13")
+  } else if (this.size === "large") {
+    return ("16")
+  } else {
+    return ("7");
   }
 };
 
@@ -20,7 +22,7 @@ $(document).ready(function() {
 
     var inputtedSize = $("input:radio[name=size]:checked").val();
     var inputtedTopping = $("input:radio[name=topping1]:checked").val();
-    alert(inputtedSize);
+    alert(inputtedTopping);
 
     var pizzaOne = new Pizza(inputtedSize, inputtedTopping);
 

@@ -1,16 +1,20 @@
-.row {
-  border: 1px solid black;
-  padding: 20px;
+.jumbotron {
+  text-align: center;
+  background-color: #B3D1B5;
 }
 
-ul {
-  list-style-type: none;
-}
-
-h3 {
+.well{
   padding: 20px;
 }
 
 .order-form {
   text-align: center;
+}
+
+h4 {
+  font-style: italic;
+}
+
+.output {
+  display: none;
 }

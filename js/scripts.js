@@ -29,7 +29,6 @@ $(document).ready(function() {
     });
 
     var newPizza = new Pizza(inputtedSize, toppingsArray);
-    console.log(newPizza)
-    $("#price").text(newPizza.price());
+    $(".price").fadeIn().text(newPizza.price());
   });
 });

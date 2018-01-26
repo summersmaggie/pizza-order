@@ -10,34 +10,26 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Maggie's Pizza</h1>
+        <h1>Pizza Shop</h1>
       </div>
 
-      <div class="menu">
-        <h2>Menu</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <ul>
-              <h2>Sizes</h2>
-              <li>Small: $7</li>
-              <li>Medium: $9</li>
-              <li>Large: $11</li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <ul>
-              <h2>Toppings: $2 each</h2>
-              <li>Meat: Salami, Pepperoni</li>
-              <li>Veggies: Pepperoncini, Jalepeño</li>
-            </ul>
-          </div>
-        </div>
+
+      <div class="well well-lg">
+        <h3>Menu</h3>
+
+        <h4>Sizes</h4>
+        <p>Small - $7</p>
+        <p>Medium - $9</p>
+        <p>Large - $11</p>
+
+        <h4>Toppings</h4>
+        <p>Salami, Pepperoni, Pepperoncini, Jalepeño, Olives - $2 Each</p>
       </div>
 
-      <div class="form">
-        <h3>Customize Your Pizza!</h2>
+      <div class="well well-lg" id="userinput">
+        <h3>Customize Your Pizza!</h3>
         <div class="size-form">
-          <h2>Select a size:</h2>
+          <h4>Select a size:</h4>
           <div class="radio">
             <label><input type="radio" name="size" value="small" checked> Small</label>
           </div>
@@ -50,7 +42,7 @@
         </div>
 
         <div class="form-group" id="toppings">
-          <h2>Select your toppings:</h2>
+          <h4>Select your toppings:</h4>
           <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni<br>
           <input type="checkbox" name="toppings" value="salami"> Salami<br>
           <input type="checkbox" name="toppings" value="pepperoncini"> Pepperoncini<br>

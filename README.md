@@ -20,13 +20,9 @@ _This website allows users to customize and order a pizza, and gives them the pr
 * Input Example: small, pepperoncini, salami
 * Output Example: $10
 
-5. The user orders pizza or starts over with new selections.
-
-6. The form clears for new order.
-
 ## Setup/Installation Requirements
 
-* _View and use webpage here: https://summersmaggie.github.io/pizza-order/ _ 
+* _View and use webpage here:_ https://summersmaggie.github.io/pizza-order/
 
 * _Clone repository_
 

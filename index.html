@@ -22,8 +22,8 @@
         <p>Medium - $9</p>
         <p>Large - $11</p>
 
-        <h4>Toppings</h4>
-        <p>Salami, Pepperoni, Pepperoncini, Jalepeño, Olives - $2 Each</p>
+        <h4>Toppings - $2 each</h4>
+        <p>Salami, Pepperoni, Pepperoncini, Jalepeño, Black olives, Mushrooms, Onions, Sausage, Bacon, Extra Cheese, Green peppers, Pineapple, Spinach</p>
       </div>
 
       <div class="well well-lg" id="userinput">
@@ -47,17 +47,23 @@
           <input type="checkbox" name="toppings" value="salami"> Salami<br>
           <input type="checkbox" name="toppings" value="pepperoncini"> Pepperoncini<br>
           <input type="checkbox" name="toppings" value="jalepeño"> Jalepeno<br>
-          <input type="checkbox" name="toppings" value="olives"> Olives<br>
+          <input type="checkbox" name="toppings" value="olives"> Black olives<br>
+          <input type="checkbox" name="toppings" value="olives"> Mushrooms<br>
+          <input type="checkbox" name="toppings" value="olives"> Onions<br>
+          <input type="checkbox" name="toppings" value="olives"> Sausage<br>
+          <input type="checkbox" name="toppings" value="olives"> Bacon<br>
+          <input type="checkbox" name="toppings" value="olives"> Extra Cheese<br>
+          <input type="checkbox" name="toppings" value="olives"> Green peppers<br>
+          <input type="checkbox" name="toppings" value="olives"> Pineapple<br>
+          <input type="checkbox" name="toppings" value="olives"> Spinach<br>
         </div>
 
         <button type="click" class="btn btn-info" id="order">Show My Price</button>
       </div>
 
-      <div class="output">
-        <h2>Your total price:</h2>
-        <p id="price"></p>
+      <div id="output">
+        <h2>Your total price is $<span class="price"></span>. Thanks for ordering with us!</h2>
       </div>
-
     </div>
   </body>
 </html>

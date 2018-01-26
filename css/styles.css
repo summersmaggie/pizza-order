@@ -1,6 +1,5 @@
 .jumbotron {
-  text-align: center;
-  background-color: #B3D1B5;
+  background-image: url(https://www.cicis.com/media/1243/pizza_adven_zestypepperoni.png);
 }
 
 .well{
@@ -15,6 +14,8 @@ h4 {
   font-style: italic;
 }
 
-.output {
+#output {
   display: none;
+  padding: 20px;
+  margin: 20px;
 }

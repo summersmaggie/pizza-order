@@ -26,6 +26,8 @@ _This website allows users to customize and order a pizza, and gives them the pr
 
 ## Setup/Installation Requirements
 
+* _View and use webpage here: https://summersmaggie.github.io/pizza-order/ _ 
+
 * _Clone repository_
 
 * _Open in text editor_

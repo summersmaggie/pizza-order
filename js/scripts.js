@@ -1,15 +1,16 @@
 //biz logic
 function Pizza(size, toppings) {
   this.size = size;
-  this.toppings = [];
+  this.toppings = toppings;
 }
 
 Pizza.prototype.price = function() {
-  if (this.size === "small") {
+  if (this.size === "small" && this.toppings === 2) {
     return ("it worked");
-  // } else if (this.size === "small" && this.topping1 === "none" && this.topping2 === "none") {
-  //   return (7 + 2 + 2);
-
+  } else if (this.size === "medium") {
+    return ("medium");
+  } else if (this.size === "large") {
+      return ("large");
   } else {
     return ("Please try again.");
   }
@@ -29,6 +30,7 @@ $(document).ready(function() {
     });
 
     var newPizza = new Pizza(inputtedSize, toppingsArray);
+    console.log(newPizza)
     $("#price").text(newPizza.price());
   });
 });

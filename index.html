@@ -8,6 +8,65 @@
     <title>Maggie's Pizza Delivery</title>
   </head>
   <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Maggie's Pizza</h1>
+      </div>
 
+      <div class="menu">
+        <h2>Menu</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <ul>
+              <h2>Sizes</h2>
+              <li>Small: $7</li>
+              <li>Medium: $9</li>
+              <li>Large: $11</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <h2>Toppings</h2>
+              <li>Meat - $2 each: Salami, Pepperoni</li>
+              <li>Veggies - $1 each: Pepperoncini, Jalepeño</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="order-form">
+        <h2>Customize Your Order:</h2>
+        <h3>Select a size:</h3>
+        <div class="radio">
+          <label><input type="radio" name="size" value="small" checked> Small</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="size" value="medium"> Medium</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="size" value="large"> Large</label>
+        </div>
+
+        <h3>Select a topping:</h3>
+        <div class="radio">
+          <label><input type="radio" name="topping" value="salami" checked> Salami</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="topping" value="pepperoni"> Pepperoni</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="topping" value="pepperoncini"> Pepperoncini</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="topping" value="jalepeño"> Jalepeño</label>
+        </div>
+
+        <button class="btn btn-info">Order Now</button>
+      </div>
+
+      <div class="price">
+      </div>
+
+    </div>
   </body>
 </html>

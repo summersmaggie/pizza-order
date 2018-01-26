@@ -1,11 +1,11 @@
 //biz logic
-function Pizza(size, topping1, topping2) {
+function Pizza(size, toppings) {
   this.size = size;
-  this.topping1 = topping1;
-  this.topping2 = topping2;
-};
+  this.toppings = toppings;
+}
 
 Pizza.prototype.price = function() {
+
   if (this.size === "small" && this.topping1 === "none" && this.topping2 === "none") {
     return (7);
   } else if (this.size === "small" && this.topping1 !== "none" && this.topping2 === "none") {
@@ -30,6 +30,14 @@ Pizza.prototype.price = function() {
     return (11 + 2 + 2)
   } else if (this.size === "large" && this.topping1 === "none" && this.topping2 !== "none") {
     return (11 + 2 + 0)
+
+  if (this.size === "small") {
+    return (7 + (this.toppings.length * 2));
+  } else if (this.size === "medium") {
+    return (9 + (this.toppings.length * 2));
+  } else if (this.size === "large") {
+      return (9 + (this.toppings.length * 2));
+
   } else {
     return ("Please try again.");
   }
@@ -37,21 +45,18 @@ Pizza.prototype.price = function() {
 
 //ui logic
 $(document).ready(function() {
+  var toppingsArray = [];
+
   $("button#order").click(function() {
-
     var inputtedSize = $("input:radio[name=size]:checked").val();
-    var inputtedTopping1 = $("input:radio[name=topping1]:checked").val();
-    var inputtedTopping2 = $("input:radio[name=topping2]:checked").val();
 
-    var pizzaOne = new Pizza(inputtedSize, inputtedTopping1, inputtedTopping2);
+    $("input:checkbox[name=toppings]:checked").each(function() {
+      var inputtedToppings = $(this).val();
+      toppingsArray.push(inputtedToppings);
+    });
 
-    $("#price").text(pizzaOne.price());
-
-    // newPizza.price();
-    // $("li#price").text(this.size);
-    // var topping2 = $("input:radio[name=topping2]:checked").val();
-    // var topping3 = $("input:radio[name=topping3]:checked").val();
-    // var topping4 = $("input:radio[name=topping4]:checked").val()
-
+    var newPizza = new Pizza(inputtedSize, toppingsArray);
+    console.log(newPizza)
+    $("#price").text(newPizza.price());
   });
 });

@@ -34,77 +34,29 @@
         </div>
       </div>
 
-      <div class="order-form">
-        <h2>Customize Your Order:</h2>
-        <h3>Select a size:</h3>
-        <div class="radio">
-          <label><input type="radio" name="size" value="small" checked> Small</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="size" value="medium"> Medium</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="size" value="large"> Large</label>
-        </div>
-
-        <h3>Select a topping:</h3>
-        <div class="radio">
-          <label><input type="radio" name="topping1" value="cheese" checked> Cheese</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="topping1" value="pepperoni"> Pepperoni</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="topping1" value="artichokes"> Artichokes</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="topping1" value="none"> No thanks!</label>
+      <div class="form">
+        <h3>Customize Your Pizza!</h2>
+        <div class="size-form">
+          <h2>Select a size:</h2>
+          <div class="radio">
+            <label><input type="radio" name="size" value="small" checked> Small</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="size" value="medium"> Medium</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="size" value="large"> Large</label>
+          </div>
         </div>
 
-        <h3>Select another topping:</h3>
-        <div class="radio">
-          <label><input type="radio" name="topping2" value="none"> No thanks!</label>
+        <div class="form-group" id="toppings">
+          <h2>Select your toppings:</h2>
+          <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni<br>
+          <input type="checkbox" name="toppings" value="salami"> Salami<br>
+          <input type="checkbox" name="toppings" value="pepperoncini"> Pepperoncini<br>
+          <input type="checkbox" name="toppings" value="jalepeño"> Jalepeno<br>
+          <input type="checkbox" name="toppings" value="olives"> Olives<br>
         </div>
-        <div class="radio">
-          <label><input type="radio" name="topping2" value="salami"> Salami</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="topping2" value="pepperoni" checked> Pepperoni</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="topping2" value="pepperoncini"> Pepperoncini</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="topping2" value="jalepeño"> Jalepeño</label>
-        </div>
-
-        <!-- <h3>Select another topping:</h3>
-        <div class="radio">
-          <label><input type="radio" name="topping3" value="salami"> Salami</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="topping3" value="pepperoni" checked> Pepperoni</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="topping3" value="pepperoncini"> Pepperoncini</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="topping3" value="jalepeño"> Jalepeño</label>
-        </div>
-
-        <h3>Select another topping:</h3>
-        <div class="radio">
-          <label><input type="radio" name="topping4" value="salami"> Salami</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="topping4" value="pepperoni" checked> Pepperoni</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="topping4" value="pepperoncini"> Pepperoncini</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="topping4" value="jalepeño"> Jalepeño</label>
-        </div> -->
 
         <button type="click" class="btn btn-info" id="order">Show My Price</button>
       </div>

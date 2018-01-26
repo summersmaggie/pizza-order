@@ -5,12 +5,12 @@ function Pizza(size, toppings) {
 }
 
 Pizza.prototype.price = function() {
-  if (this.size === "small" && this.toppings === 2) {
-    return ("it worked");
+  if (this.size === "small") {
+    return (7 + (this.toppings.length * 2));
   } else if (this.size === "medium") {
-    return ("medium");
+    return (9 + (this.toppings.length * 2));
   } else if (this.size === "large") {
-      return ("large");
+      return (9 + (this.toppings.length * 2));
   } else {
     return ("Please try again.");
   }
@@ -26,7 +26,6 @@ $(document).ready(function() {
     $("input:checkbox[name=toppings]:checked").each(function() {
       var inputtedToppings = $(this).val();
       toppingsArray.push(inputtedToppings);
-      alert(toppingsArray);
     });
 
     var newPizza = new Pizza(inputtedSize, toppingsArray);

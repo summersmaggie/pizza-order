@@ -1,44 +1,28 @@
-# Pig Latin
+# Pizza Order
 
-#### webpage that translates a phrase into pig latin, 1-18-18
+#### website where a user can order a pizza, 1-26-18
 
-#### _By Sara Hamilton and Maggie Summers_
+#### _By Maggie Summers_
 
 ## Description
 
-_This webpage takes in a string as input and returns the string translated into pig latin as output._
-
-### The Rules of Pig Latin
-
-* For words beginning with a vowel, add "way" to the end.
-
-* For words beginning with one or more consonants, move all of the first consecutive consonants to the end, and add "ay".
-
-* If the first consonants include "qu", move the "u" along with the "q". Don't forget about words like "squeal" where "qu" doesn't come first!
-
-* For words beginning with "y", treat "y" as a consonant.
+_This website allows users to customize and order a pizza, and gives them the price based on their selections._
 
 ### Specifications
 
-1. The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels.
-* Input Example: 3
-* Output Example: 3
-2. The program adds "ay" to single-letter words beginning with a vowel.
-* Input Example: i
-* Output Example: iay
-3. The program adds "way" to the end of word beginning with a vowel.
-* Input Example: object
-* Output Example: objectway
-4. The program treats "y" as a consonant for words beginning with "y".
-* Input Example: your
-* Output Example: ouryay
-5. The program moves all of the first consecutive consonants to the end of words beginning with one or more consonants and adds "ay".
-* Input Example: think
-* Output Example: inkthay
-6. The program moves the "q" and "u" together to the end of a word for words where "q" is one of the first consonants and is followed by "u" .
-* Input Example: squeal
-* Output Example: ealsquay
+1. The user sees menu containing toppings, sizes and prices.
 
+2. The user selects the size of their pizza.
+
+3. The user selects toppings of their pizza.
+
+4. The user sees price of pizza with selections.
+* Input Example: small, pepperoncini, salami
+* Output Example: $10
+
+5. The user orders pizza or starts over with new selections.
+
+6. The form clears for new order.
 
 ## Setup/Installation Requirements
 
@@ -58,14 +42,15 @@ _To suggest changes, submit a pull request in the GitHub repository._
 
 * HTML
 * CSS
+* JavaScript
 * jQuery 3.2.1
-* Bootstrap 3.3.7
+* Bootstrap 4.0.0
 
 ### License
 
 *MIT License*
 
-Copyright (c) 2018 **_Sara Hamilton and Maggie Summers_**
+Copyright (c) 2018 **_Maggie Summers_**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -79,7 +64,7 @@ copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE

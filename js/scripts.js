@@ -22,10 +22,9 @@ $(document).ready(function() {
     var inputtedTopping = $("input:radio[name=topping1]:checked").val();
     alert(inputtedSize);
 
-    var newPizza = new Pizza(inputtedSize, inputtedTopping);
-    alert(newPizza);
+    var pizzaOne = new Pizza(inputtedSize, inputtedTopping);
 
-    $("li#price").append("<li>" + Pizza.price() + "</li>");
+    $("#price").text(pizzaOne.price());
 
     // newPizza.price();
     // $("li#price").text(this.size);

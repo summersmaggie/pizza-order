@@ -31,5 +31,6 @@ $(document).ready(function() {
     var newPizza = new Pizza(inputtedSize, toppingsArray);
     $(".price").text(newPizza.price());
     $("#output").show();
+    toppingsArray = [];
   });
 });
